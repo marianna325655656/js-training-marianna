@@ -1,14 +1,13 @@
 const prompt = require("prompt-sync")({ sigint: true });
 
 let grossSalary = prompt("Enter gross salary: ").trim(); // Trim whitespace
-let itemPrice = parseFloat(grossSalary);
+let itemPrice = parseFloat(grossSalary); // the variable name itemPrice is incorrectly describing the gross salary amount, you could just do let grossSalary = +prompt("Enter gross salary: ").trim() or parseFloat(prompt("Enter gross salary: ").trim()) 
 let socialSecurity = 0;
 let stampDuty = 0;
 
 // Function to validate the input
 function isValidNumber(value) {
-    return !isNaN(value) && value.toString() === grossSalary; // Ensure full input is numeric
-}
+    return !isNaN(value) && value.toString() === grossSalary; //Why do you need here value.toString() === grossSalary check?
 
 // Function to calculate net salary
 function calculateNetSalary(itemPrice) {
