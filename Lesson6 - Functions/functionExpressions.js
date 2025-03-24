@@ -8,7 +8,10 @@ const prompt=require("prompt-sync")({sigint:true});
 let number = parseInt(prompt("Enter the number: "));
 
 let oddOrEven = function(num){
-   
+// The function prints the result using console.log(), but it does not return the result.
+// Requirement: The function should return whether the number is even or odd.
+// You should use return instead of console.log()
+
    if(num % 2 === 0){
         console.log('The number is Even');
     }else{
