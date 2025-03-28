@@ -7,7 +7,7 @@
 n
 let callback = (n) => n*n;
 
-let calculateNumber = function(n, callback){
+let calculateNumber = function(n, callback){ // Rename calculateNumber to calculateSquare to better reflect the task's requirement.
     return callback(n);
 }
 console.log(calculateNumber(5, callback));
