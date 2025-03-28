@@ -9,7 +9,7 @@ const correctUsername = 'Adam';
 const correctPassword = 'testets123';
 
 let userCredentials = (username, password, callback) => {
-  if(username === correctUsername & password === correctPassword ){
+  if(username === correctUsername & password === correctPassword ){ // In the condition if (username === correctUsername & password === correctPassword), you're using a bitwise AND (&) operator instead of the logical AND (&&) operator.
     callback("Login successful!");
   }else{
     callback("Incorrect username or password.");
